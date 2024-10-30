@@ -83,7 +83,8 @@ On kali give the command exploit
 To see a list of processes, at the meterpreter > prompt, execute this command:
 ps  ⇒ can see the fun.exe process running with pid 1156
 
-![Screenshot 2024-10-09 083005](https://github.com/user-attachments/assets/4e3006f1-0245-4480-9130-fa6ff1f5176c)
+![Screenshot 2024-10-30 092955](https://github.com/user-attachments/assets/d0cee197-7029-4bd2-9514-08dd8ff8879a)
+
 
 
 The Metasploit shell is running inside the "fun.exe" process. If the user closes that process, or logs off, the connection will be lost.
