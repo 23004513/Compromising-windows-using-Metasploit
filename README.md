@@ -48,7 +48,7 @@ sudo systemctl apache2 start
 
 Check the status of apache2
 ## OUTPUT:
-![Screenshot 2024-10-09 082834](https://github.com/user-attachments/assets/545a3b41-410d-481e-ba6a-0215594f1a8e)
+![image](https://github.com/user-attachments/assets/672244aa-397d-4d3f-804f-0ff51262b28f)
 
 Invoke msfconsole:
 ## OUTPUT:
