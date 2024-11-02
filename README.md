@@ -96,18 +96,19 @@ netstat
 A list of network connections appears, including one to a remote port of 4444, as highlighted in the image below.
 Notice the "PID/Program name" value for this connection, which is redacted 
 
+![image](https://github.com/user-attachments/assets/da031b87-1847-45bb-9bbf-ba5f9cd048ac)
 
 
 Post Exploitation
 The target is now owned. Following are meterpreter commands for key capturing in the target machine
 keyscan_start	Begins capturing keys typed in the target. On the Windows target, open Notepad and type in some text, such as your name.
 
+![image](https://github.com/user-attachments/assets/25796f8a-821f-4a6c-94c4-9330321062aa)
 
 
 keyscan_dump	Shows the keystrokes captured so far
 
-
-
+![image](https://github.com/user-attachments/assets/c43084c2-5597-46f3-99ca-3f90c98769d4)
 
 
 ## RESULT:
